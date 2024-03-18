@@ -1,0 +1,171 @@
+@font-face {
+    font-family: my-cool-font;
+    src: url(./Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto-Regular.ttf);
+}
+
+:root {
+    --olive: #596D48; 
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url(./images/plant.avif);
+    background-size: max(200px, 100%) max(500px, 100%);
+    width: 35%;
+    height: 100vh;
+}
+
+.grey-bckgrnd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 66, 66, 0.7);
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 15%;
+}
+
+.grey-bckgrnd > img {
+    width: 15%;
+    height: 90%;
+}
+
+.grey-bckgrnd > h1 {
+    font-family: my-cool-font;
+    color: white;
+    font-size: 84px;
+}
+
+.side-img > p {
+    align-self: center;
+    color: white;
+}
+
+.side-img > p > a {
+    color: white;
+}
+
+.main {
+    font-family: roboto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    justify-content: space-evenly;
+}
+
+.toptext {
+    align-self: flex-start;
+    width: 68%;
+    margin-left: 32px;
+}
+
+.toptext,
+form p:first-child {
+    padding: 12px;
+    font-size: 30px;
+}
+
+.toptext > p + p {
+    margin-top: 30px;
+}
+
+form > div > div {
+    display: flex;
+}
+
+form > div > div > div {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+input, label {
+    width: max-content;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+input:focus:invalid {
+    border: 2px solid red;
+    outline-color: transparent;
+}
+
+input:focus:valid {
+    border: 2px solid rgb(128, 211, 4);
+    outline-color: transparent;
+}
+
+.layout-form {
+    box-shadow: 0px 0px 10px lightgray;
+    width: 97%;
+    padding-left: 32px;
+}
+
+label > span {
+    font-weight: 700;
+}
+
+.create {
+    font-family: roboto;
+    margin: 32px 0px 18px 42px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: var(--olive);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.login {
+    margin-left: 32px;
+}
+
+.login > p > button {
+    color: var(--olive);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: transparent;
+    border: transparent;
+}
+
+form > div:last-child > p {
+    font-size: 18px;
+}
+
+form > div:last-child > p > button {
+    color: var(--olive);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: transparent;
+    border: transparent;
+}
