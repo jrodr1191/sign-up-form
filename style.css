@@ -127,6 +127,7 @@ input:focus:valid {
     box-shadow: 0px 0px 10px lightgray;
     width: 97%;
     padding-left: 32px;
+    padding-bottom: 12px;
 }
 
 label > span {
